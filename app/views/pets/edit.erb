@@ -8,9 +8,6 @@
       <input type="text" name="pet_name" id="pet_name"></input>
 
       <h2>Owners: </h2>
-       <!-- <h4><%=@pet.owner.name%></h4>
-       <input type="radio" name="owner[name]" value="<%=@pet.owner.name%>" id="<%=@pet.owner.id%>"></input> -->
-
       <%@owners.each do |owner|%>
           <%if owner.id == @pet.owner_id%>
               <h4><%=@pet.owner.name%></h4>
