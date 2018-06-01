@@ -47,7 +47,7 @@ class PetsController < ApplicationController
         #   binding.pry
           @pet.update(:owner_id => @owner.id)
       end
-    #   binding.pry
+       binding.pry
      redirect "pets/#{@pet.id}"
    end
 
